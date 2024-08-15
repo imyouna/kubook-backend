@@ -1,7 +1,10 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, String, Text, DateTime, ForeignKey
-from sqlalchemy.sql import func
+from sqlalchemy import (Boolean, Column, DateTime, ForeignKey, Integer, String,
+                        Text)
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
+
 
 class Notice(Base):
     __tablename__ = "notice"

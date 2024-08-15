@@ -1,7 +1,9 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, String, DateTime
-from sqlalchemy.sql import func
+from sqlalchemy import Boolean, Column, DateTime, Integer, String
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
+
 
 class User(Base):
     __tablename__ = "user"

@@ -1,7 +1,9 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, Text, DateTime, ForeignKey
-from sqlalchemy.sql import func
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, Text
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
+
 
 class BookReview(Base):
     __tablename__ = "book_review"

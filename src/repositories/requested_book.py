@@ -1,7 +1,10 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, String, Date, DateTime, Text, ForeignKey
-from sqlalchemy.sql import func
+from sqlalchemy import (Boolean, Column, Date, DateTime, ForeignKey, Integer,
+                        String, Text)
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
+
 
 class RequestedBook(Base):
     __tablename__ = "requested_book"

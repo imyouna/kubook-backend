@@ -1,13 +1,12 @@
-from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from fastapi.middleware.cors import CORSMiddleware
 
-from ssh import get_ssh_connection
-from config import Settings
-
-from auth.router import router as auth_router
-from tests.test_router import router as test_router
 from admin.router import router as admin_router
+from auth.router import router as auth_router
+from config import Settings
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from ssh import get_ssh_connection
+from tests.test_router import router as test_router
 
 settings = Settings()
 

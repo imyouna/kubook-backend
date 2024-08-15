@@ -1,7 +1,9 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, String, DateTime
-from sqlalchemy.sql import func
+from sqlalchemy import Boolean, Column, DateTime, Integer, String
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
+
 
 class BookCategory(Base):
     __tablename__ = "book_category"

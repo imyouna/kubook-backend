@@ -1,7 +1,8 @@
-from .base import Base
-from sqlalchemy import Boolean, Column, Integer, Date, DateTime, ForeignKey
-from sqlalchemy.sql import func
+from sqlalchemy import Boolean, Column, Date, DateTime, ForeignKey, Integer
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
+from .base import Base
 
 
 class Loan(Base):
